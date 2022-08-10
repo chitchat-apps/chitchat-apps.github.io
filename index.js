@@ -2,8 +2,10 @@ const downloadEl = document.querySelector("#download-button");
 
 const getDownloadUrl = (os) => {
   const baseUrl =
-    "https://github.com/chitchat-apps/chitchat/releases/download/latest/";
-  return os !== "Windows" ? "/#downloads" : baseUrl + "ChitChat.msi";
+    "https://github.com/chitchat-apps/chitchat/releases/latest/download/";
+  return os !== "Windows"
+    ? "/#downloads"
+    : baseUrl + "ChitChat-Setup-Windows.msi";
 };
 
 const setOs = () => {
